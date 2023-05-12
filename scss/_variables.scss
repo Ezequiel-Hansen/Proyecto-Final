@@ -1,0 +1,12 @@
+$color-general:#191825;
+$color-blanco:white;
+$color-negro:black;
+$color-boton-compra:#0053a0;
+$color-boton-eliminar: rgb(221, 0, 0);
+$sombras: 0 5px 20px rgba(0, 0, 0, .3);
+$estilos-contacto:(espaciado-interno: 10px, margenes: 15px 5px, bordes: thin, redondeo: 6px);
+@mixin sizes($font-size,$margin,$border){
+    font-size: $font-size;
+    margin: $margin;
+    border: $border;
+}

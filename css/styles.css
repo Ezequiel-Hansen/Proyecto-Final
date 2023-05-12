@@ -1,0 +1,363 @@
+/* Fuente*/
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+/* Reset a los valores predeterminados */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+/* Barras de navegacion */
+header {
+  display: flex;
+  align-items: center;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+header nav ul li {
+  padding: 5px 20px;
+  margin: 6px;
+}
+
+nav {
+  background-color: #191825;
+  width: 100%;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  font-size: 21px;
+}
+.navbar-expand-lg .navbar-nav .nav-link.navbar-nav.nav-link:hover() {
+  color: black;
+}
+
+.img__nav {
+  height: 65px;
+  width: 65px;
+}
+
+.section__h2 {
+  padding: 35px;
+  color: black;
+}
+
+/* Footer */
+footer {
+  background-color: #191825;
+  display: inline-block;
+  margin-top: 35px;
+  padding: 13px;
+}
+footer div {
+  text-align: center;
+}
+footer div ul li {
+  list-style-type: none;
+  padding: 3px;
+  font-size: 20px;
+}
+footer div ul li ion-icon:hover {
+  cursor: pointer;
+}
+
+/* Titulo de la pagina Inicio */
+h1 {
+  text-align: justify;
+  margin-top: 120px;
+  margin-left: 25px;
+  margin-bottom: 50px;
+  padding: 15px 20px;
+}
+
+/* Titulo y Imagen de la pagina Producto */
+.main__h1 {
+  text-align: center;
+  padding: 150px;
+  color: white;
+  background-image: url("https://caliathletics.com/wp-content/uploads/2018/04/Building-your-body-with-calisthenics-.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+p {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+/* Maquetado de la pagina Productos */
+.tabla1 {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px 40px;
+}
+
+.tabla2 {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px 40px;
+}
+
+.tabla3 {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px 40px;
+}
+
+/* Creador de los contenedores de los productos */
+.card {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  gap: 30px;
+  justify-content: space-evenly;
+  width: 330px;
+  padding: 20px 0px 40px;
+  margin: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  border: thin;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card__image {
+  width: 100%;
+  height: 150px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  display: grid;
+  place-items: center;
+}
+
+.card__text {
+  width: 100%;
+  margin: 5px;
+  padding: 6px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+}
+
+#boton-de-compra {
+  font-size: 16px;
+  margin: 7px;
+  border: thin;
+  width: 200px;
+  border-radius: 25px;
+  padding: 15px 20px;
+  background-color: #0053a0;
+  color: white;
+  transition: 0.3s;
+}
+#boton-de-compra:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* Maquetados de la pagina ofertas */
+.main__section, .form__section {
+  display: flex;
+  justify-content: center;
+}
+
+/* Maquetados de la pagina carrito de compras */
+.main__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Creador de los contenedores del carrito */
+.section__card--carrito {
+  display: flex;
+  flex-direction: row;
+  border-radius: 6px;
+  margin: 15px;
+  padding: 20px 10px;
+  background-color: white;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card__image--carrito {
+  width: 200px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  justify-self: flex-start;
+}
+
+.card__text--carrito {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  margin: 5px;
+  padding: 6px;
+  font-size: 17px;
+  justify-self: center;
+  text-transform: capitalize;
+}
+
+#boton-eliminar {
+  font-size: 16px;
+  margin: 7px;
+  border: thin;
+  border-radius: 17px;
+  padding: 10px;
+  background-color: rgb(221, 0, 0);
+  color: white;
+  transition: 0.3s;
+}
+#boton-eliminar:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.section__boton {
+  display: flex;
+  align-items: center;
+}
+
+#boton-de-compra--carrito {
+  font-size: 16px;
+  margin: 7px;
+  border: thin;
+  width: 600px;
+  border-radius: 25px;
+  padding: 15px 20px;
+  background-color: #0053a0;
+  color: white;
+  transition: 0.3s;
+}
+#boton-de-compra--carrito:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/* Formulario de la pagina Contacto */
+.card__email {
+  padding: 10px;
+  margin: 15px 5px;
+  border: thin;
+  border-radius: 6px;
+  width: 200px;
+}
+
+.card__nombres {
+  padding: 10px;
+  margin: 15px 5px;
+  border: thin;
+  border-radius: 6px;
+  width: 200px;
+}
+
+.card__number {
+  padding: 10px;
+  margin: 15px 5px;
+  border: thin;
+  border-radius: 6px;
+  width: 150px;
+}
+
+.card__mensaje {
+  padding: 10px;
+  margin: 15px 5px;
+  border: thin;
+  border-radius: 6px;
+  height: 150px;
+}
+
+.form__section {
+  background-color: #191825;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.button__submit {
+  font-size: 17px;
+  border: thin;
+  border-radius: 10px;
+  padding: 3px 20px;
+  margin: 10px;
+  background: #0053a0;
+  color: white;
+  transition: 0.3s;
+}
+.button__submit:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* BreakPoints(Media-queris) */
+@media screen and (max-width: 576px) {
+  .tabla1 {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 40px;
+  }
+  .tabla2 {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 40px;
+  }
+  .tabla3 {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 40px;
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+  .main__section, .form__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #boton-de-compra--carrito {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+  .tabla1 {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 40px;
+  }
+  .tabla2 {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 40px;
+  }
+  .tabla3 {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 40px;
+  }
+  .main__section, .form__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #boton-de-compra--carrito {
+    width: 100%;
+  }
+}/*# sourceMappingURL=styles.css.map */

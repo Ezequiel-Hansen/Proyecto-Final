@@ -1,0 +1,68 @@
+/* Fuente*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+/* Reset a los valores predeterminados */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans',sans-serif;
+}
+/* Barras de navegacion */
+header{
+    display: flex;
+    align-items: center;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+        nav{
+            ul{
+                li{
+                    padding: 5px 20px;
+                    margin: 6px;
+                }
+
+            }
+        }
+}
+nav{
+    background-color:$color-general;
+    width: 100%;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    font-size: 21px;
+    &.navbar-nav.nav-link:hover(){
+        color: black;
+    }    
+}
+
+
+.img__nav{
+    height: 65px;
+    width: 65px;
+}
+.section__h2{
+    padding: 35px;
+    color: $color-negro;
+}
+/* Footer */
+footer{
+    background-color: $color-general;
+    display: inline-block;
+    margin-top: 35px;
+    padding: 13px;
+    & div{
+        text-align: center;
+    }
+    & div ul li{
+        list-style-type: none;
+        padding: 3px;
+        font-size: 20px;
+    }
+    & div ul li ion-icon:hover{
+        cursor: pointer;
+    }
+
+}
