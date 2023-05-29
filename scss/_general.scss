@@ -15,12 +15,13 @@ header{
     top: 0;
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 1;
         nav{
             ul{
+                margin-left: 75px;
                 li{
                     padding: 5px 20px;
-                    margin: 6px;
+                    margin: 15px;
                 }
 
             }
@@ -40,29 +41,44 @@ nav{
 
 
 .img__nav{
+    justify-content: center;
     height: 65px;
     width: 65px;
+    margin-right: 15px;
+    margin-left: 3px;
 }
 .section__h2{
     padding: 35px;
     color: $color-negro;
+    font-weight: bold;
 }
 /* Footer */
 footer{
     background-color: $color-general;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 35px;
     padding: 13px;
     & div{
         text-align: center;
     }
+    & ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
     & div ul li{
         list-style-type: none;
         padding: 3px;
+        margin: 8px;
         font-size: 20px;
     }
     & div ul li ion-icon:hover{
-        cursor: pointer;
+        cursor: pointer;    
+
     }
 
 }

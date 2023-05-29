@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    animation: animations 1s ease 0s 1 normal both;
 }
 
 /* Creador de los contenedores del carrito */
@@ -57,7 +58,7 @@
 #boton-de-compra--carrito{
     @include sizes(16px,7px,thin);
     width: 600px;
-    border-radius: 25px;
+    border-radius: 15px;
     padding:15px 20px;
     background-color: $color-boton-compra;
     color: $color-blanco;

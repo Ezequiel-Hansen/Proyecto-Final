@@ -3,7 +3,7 @@
     @for $i from 1 through 3{
         .tabla#{$i}{
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         margin: 10px 40px; 
         }
     }
@@ -20,6 +20,11 @@
         display: flex;
         justify-content: center;
         width: 100%;
+    }
+    .img_banner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 @media screen and (max-width:768px){
@@ -30,7 +35,7 @@
     @for $i from 1 through 3{
         .tabla#{$i}{
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         margin: 10px 40px; 
         }
     }
@@ -41,5 +46,10 @@
     }
     #boton-de-compra--carrito{
         width: 100%;
+    }
+    .img_banner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }

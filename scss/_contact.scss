@@ -5,23 +5,20 @@
     margin:map-get($estilos-contacto ,margenes);
     border: map-get($estilos-contacto ,bordes);
     border-radius: map-get($estilos-contacto ,redondeo);
+    width: map-get($estilos-contacto,ancho);
 }
 .card__email{
     @include estilos-para-formulario;
-    width: 200px;
 
 }
 .card__nombres{
     @include estilos-para-formulario;
-    width: 200px;
 }
 .card__number{
     @include estilos-para-formulario;
-    width: 150px;
 }
 .card__mensaje{
     @include estilos-para-formulario;
-    height: 150px;
 }
 
 .form__section{
@@ -29,7 +26,7 @@
     background-color: $color-general;
     flex-direction: column;
     align-items: center;
-    height: 500px;
+    height: 620px;
     box-shadow:$sombras;
 }
 
@@ -37,7 +34,7 @@
     font-size: 17px;
     border:thin;
     border-radius: 10px;
-    padding:3px 20px;
+    padding:5px 40px;
     margin:10px;
     background:$color-boton-compra;
     color: $color-blanco;
